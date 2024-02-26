@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="px-40 py-5 flex space-x-96 bg-[#003b95] text-white">
+    <div class="">
+      <h1 class="font-semibold text-2xl">Booking.com</h1>
+    </div>
+
+    <div class="flex flex-1 space-x-3 justify-center items-center">
+      <h1 class="font-semibold px-3 py-3 rounded hover:bg-[hsla(0,0%,100%,.1)]">LKR</h1>
+      <div class="px-3 py-3 rounded hover:bg-[hsla(0,0%,100%,.1)]"><img src="./assets/css/images/SRLA0001__79307.webp"
+          alt="Sri lanka" class="h-6 w-6 rounded-full object-cover"></div>
+      <div class="px-2.5 py-2.5 rounded hover:bg-[hsla(0,0%,100%,.1)]"><svg xmlns="http://www.w3.org/2000/svg"
+          width="28" height="28" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="M11.95 18q.525 0 .888-.363t.362-.887q0-.525-.362-.888t-.888-.362q-.525 0-.887.363t-.363.887q0 .525.363.888t.887.362m.05 4q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22m0-2q3.35 0 5.675-2.325T20 12q0-3.35-2.325-5.675T12 4Q8.65 4 6.325 6.325T4 12q0 3.35 2.325 5.675T12 20m.1-12.3q.625 0 1.088.4t.462 1q0 .55-.337.975t-.763.8q-.575.5-1.012 1.1t-.438 1.35q0 .35.263.588t.612.237q.375 0 .638-.25t.337-.625q.1-.525.45-.937t.75-.788q.575-.55.988-1.2t.412-1.45q0-1.275-1.037-2.087T12.1 6q-.95 0-1.812.4T8.975 7.625q-.175.3-.112.638t.337.512q.35.2.725.125t.625-.425q.275-.375.688-.575t.862-.2" />
+        </svg></div>
+      <div><button class=" px-2 py-2 border rounded font-semibold text-sm hover:bg-[hsla(0,0%,100%,.1)]">List your
+          property</button></div>
+      <div> <button class=" px-3 py-1.5 bg-white text-blue-600 rounded font-semibold text-sm">Rigister</button></div>
+      <div><button class=" px-3 py-1.5 bg-white text-blue-600 rounded font-semibold text-sm">Sing up</button> </div>
+    </div>
+  </div>
+
+  <div class="flex px-5 pb-3 pl-32 space-x-3 bg-[#003b95] text-white text-sm">
+
+    <div
+      class="flex space-x-1 items-center font-semibold border border-white rounded-3xl px-2 py-1 bg-[hsla(0,0%,100%,.1)] cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M3 12.61q0-.672.472-1.14q.472-.47 1.143-.47H5V8.615q0-.67.472-1.143Q5.944 7 6.615 7h10.77q.67 0 1.143.472q.472.472.472 1.143V11h.385q.67 0 1.143.472q.472.472.472 1.143v2.535q0 .344-.253.597T20.15 16l-.338 1.79q-.031.093-.099.151q-.067.059-.16.059h-.107q-.092 0-.16-.059q-.067-.058-.098-.15L18.85 16H5.15l-.338 1.79q-.031.093-.099.151q-.067.059-.16.059h-.107q-.092 0-.16-.059q-.067-.058-.098-.15L3.85 16q-.344 0-.597-.253T3 15.15zM12.5 11H18V8.615q0-.269-.173-.442T17.385 8H12.5zM6 11h5.5V8H6.615q-.269 0-.442.173T6 8.615zm-2 4h16v-2.385q0-.269-.173-.442T19.385 12H4.615q-.269 0-.442.173T4 12.615zm16 0H4z" />
+      </svg>
+      <div>Stays</div>
+    </div>
+
+    <div
+      class="flex space-x-1 items-center font-semibold text-white px-2 py-1 rounded-3xl hover:bg-[hsla(0,0%,100%,.1)] cursor-pointer ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+        <path fill="currentColor"
+          d="M220 216a4 4 0 0 1-4 4H72a4 4 0 0 1 0-8h144a4 4 0 0 1 4 4m24-80v24a4 4 0 0 1-4 4H61.06a35.79 35.79 0 0 1-34.48-25.66L12.52 91.45A12 12 0 0 1 24 76h8a4 4 0 0 1 2.83 1.17L57.66 100h29.7L76.63 67.79A12 12 0 0 1 88 52h8a4 4 0 0 1 2.83 1.17L145.66 100H208a36 36 0 0 1 36 36m-8 0a28 28 0 0 0-28-28h-64a4 4 0 0 1-2.83-1.17L94.35 60H88a4 4 0 0 0-3.8 5.26l12.5 37.48a4 4 0 0 1-3.79 5.26H56a4 4 0 0 1-2.82-1.17L30.35 84H24a4 4 0 0 0-3.83 5.15l14.07 46.9A27.83 27.83 0 0 0 61.06 156H236Z" />
+      </svg>
+      <div>Flights</div>
+    </div>
+
+    <div
+      class="flex space-x-1 items-center font-semibold px-2 py-1 rounded-3xl hover:bg-[hsla(0,0%,100%,.1)] cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="M5.23 18v1.5q0 .213-.143.356T4.731 20H4.5q-.213 0-.356-.144T4 19.5v-7.346L5.985 6.5q.073-.238.281-.37q.209-.13.465-.13h10.615q.227 0 .412.138q.186.137.257.362L20 12.154V19.5q0 .213-.144.356T19.5 20h-.23q-.213 0-.357-.144t-.144-.356V18zm.185-6.846h13.17L17.112 7H6.888zm-.415 1V17zm2.428 3.538q.466 0 .788-.326q.322-.327.322-.794t-.326-.788q-.327-.322-.793-.322t-.79.326q-.321.327-.321.793t.326.79q.327.321.794.321m9.153 0q.467 0 .79-.326q.321-.327.321-.794t-.326-.788q-.327-.322-.794-.322t-.788.326q-.322.327-.322.793t.326.79q.327.321.793.321M5 17h14v-4.846H5z" />
+      </svg>
+      <div>Car rentals</div>
+    </div>
+
+    <div
+      class="flex space-x-1 items-center font-semibold px-2 py-1 rounded-3xl hover:bg-[hsla(0,0%,100%,.1)] cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <path fill="currentColor"
+          d="m6.575 21.27l1.158-2.59q-.427-.293-.82-.614q-.392-.32-.75-.716q-.161.075-.339.113q-.178.037-.345.037q-.71 0-1.22-.51t-.51-1.22q0-.405.183-.769t.5-.601q-.2-.575-.294-1.162q-.094-.588-.094-1.238t.094-1.237q.095-.588.295-1.163q-.318-.237-.501-.6q-.184-.365-.184-.77q0-.709.51-1.22t1.22-.51q.168 0 .346.038q.178.037.34.112q.824-.9 1.868-1.51q1.043-.61 2.243-.89q.087-.635.591-1.077q.505-.442 1.14-.442q.634 0 1.14.426q.504.426.59 1.055q1.239.28 2.282.887q1.044.607 1.869 1.501q.161-.075.317-.093q.156-.019.317-.019q.71 0 1.22.511q.51.51.51 1.22q0 .404-.18.763q-.18.358-.492.595q.2.58.294 1.177q.094.596.094 1.246t-.094 1.263t-.294 1.187q.292.237.463.576q.171.34.171.743q0 .71-.51 1.22q-.51.511-1.22.511q-.162 0-.318-.028q-.155-.028-.317-.084q-.358.397-.728.723q-.37.326-.841.62l1.108 2.538h-1.004l-.912-2.084q-.427.207-.848.349t-.886.254q-.087.63-.592 1.055q-.505.426-1.14.426q-.634 0-1.139-.442q-.504-.442-.591-1.077q-.471-.113-.895-.255q-.424-.141-.851-.349l-.95 2.123zm1.477-3.39l1.973-4.384q-.254-.315-.387-.692q-.132-.377-.132-.804q0-1.021.74-1.76q.739-.74 1.76-.74q1.02 0 1.76.74q.74.739.74 1.76q0 .427-.155.82q-.155.392-.414.726l1.973 4.373q.34-.219.649-.478q.308-.258.585-.58q-.202-.219-.297-.495q-.095-.276-.095-.597q0-.8.636-1.327q.637-.527 1.38-.365q.15-.5.244-1.007q.094-.507.094-1.07t-.094-1.076q-.095-.512-.245-1.012q-.742.161-1.36-.366q-.617-.527-.617-1.327q0-.282.11-.553q.112-.27.283-.49q-.725-.782-1.63-1.291q-.903-.51-1.936-.785q-.179.483-.613.788q-.435.304-.998.304q-.564 0-.998-.304q-.435-.305-.614-.788q-1.044.275-1.948.788t-1.629 1.3q.171.22.282.49q.11.27.11.553q0 .819-.63 1.324q-.63.505-1.373.368q-.15.5-.225 1.007q-.075.507-.075 1.07t.075 1.07q.075.507.225 1.007q.704-.162 1.354.356q.65.517.65 1.336q0 .321-.096.572q-.095.251-.297.47q.277.322.586.567q.309.245.649.503m.808.465q.352.183.735.312q.384.129.8.242q.178-.483.613-.787q.434-.305.998-.305q.563 0 .998.305q.434.304.613.787q.396-.113.765-.223q.368-.11.72-.292l-1.873-4.212q-.28.144-.577.236q-.296.091-.646.091q-.356 0-.674-.094t-.6-.283z" />
+      </svg>
+      <div>Attractions</div>
+    </div>
+
+    <div
+      class="flex space-x-1 items-center font-semibold px-2 py-1 rounded-3xl hover:bg-[hsla(0,0%,100%,.1)] cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+        <path fill="currentColor"
+          d="M112 304v-96h40v-32H40v32h40v96zm221.483 0L356 269.358L378.517 304h38.166l-41.6-64l41.6-64h-38.166L356 210.642L333.483 176h-38.166l41.6 64l-41.6 64zM440 176h32v128h-32zM40 104h432v32H40zm0 240h432v32H40zm201.337-64l8 24h33.731L240.4 176h-45.952l-39.439 128h33.484l7.4-24Zm-23.617-70.854L230.671 248h-24.923Z" />
+      </svg>
+      <div>Airport texis </div>
+    </div>
+  </div>
+
+  <div class="px-40 py-40 bg-[url('/assets/css/images/The-Chatwal-Luxury-Collection-Hotel-New-York-Chatwal-Suite-Living-Room-Area.jpg')] object-cover">
+    <div class="font-bold text-4xl text-white">Search hotels in Appin</div>
+    <div class="font-semibold text-lg text-white">Enter your dates to see the latest prices and deals for Appin hotels
+    </div>
+    <div class="bg-yellow-400 p-1 flex space-x-1 rounded mt-5">
+      <input type="text" placeholder="Whare are you going ?"
+        class="h-14 w-80 pl-2 outline-none placeholder:text-black placeholder:text-sm placeholder:font-semibold rounded">
+      <input type="text" placeholder="Check-date"
+        class="h-14 w-72 pl-2 outline-none rounded placeholder:text-black placeholder:text-sm placeholder:font-semibold ">
+      <input type="text" placeholder=" 2adult - 0child - 1 room "
+        class="h-14 w-72 pl-2 outline-none rounded placeholder:text-black placeholder:text-sm placeholder:font-semibold ">
+      <button class="h-14 outline-none bg-blue-500 w-32 hover:bg-blue-700 text-white font-semibold text-xl rounded">
+        Search</button>
+    </div>
+    <div class="text-white mt-3 space-x-2 flex"> <input type="checkbox" class="h-5 w-5">
+      <div class="font-semibold text-sm"> I'm travelling for work</div>
+    </div>
+  </div>
+
+  <div class="px-40 py-5">
+    <div class="flex space-x-2 text-sm">
+      <div><a href=""
+          class="text-blue-700 hover:border-solid hover:border-b-blue-500 hover:border-b-2 transition transform hover:translate-y-1 hover:scale-150">
+          Home </a> </div>
+      <div>></div>
+      <div><a href=""
+          class="text-blue-700 hover:border-solid hover:border-b-blue-500 hover:border-b-2 transition transform hover:translate-y-1 hover:scale-150">Hotels</a>
+      </div>
+      <div>></div>
+      <div> <a href=""
+          class="text-blue-700 hover:border-solid hover:border-b-blue-500 hover:border-b-2 transition transform hover:translate-y-1 hover:scale-150">United
+          kingdom </a> </div>
+      <div>></div>
+      <div> <a href=""
+          class="text-blue-700 hover:border-solid hover:border-b-blue-500 hover:border-b-2 transition transform hover:translate-y-1 hover:scale-150">Argyll
+          and Bute</a>
+      </div>
+      <div>></div>
+      <div> Appin </div>
+    </div>
+
+    <div class="flex space-x-8">
+      <div class="mt-5">
+        <div name="sri lanka" class=" h-40 w-64 rounded bg-[url('/assets/css/images/googleimage.jpg')] "><button
+            class="px-3 py-1.5 bg-blue-600 rounded text-white font-semibold mt-20 ml-9"> Show hotels on map</button>
+        </div>
+
+        <div class=" max-w-64  rounded p-5 mt-5 border border-zinc-700 sticky top-5">
+          <div>
+            <div class="font-semibold text-lg mb-2">Filter by:</div>
+            <hr>
+            <div class="flex flex-col mb-10 mt-5 space-y-5">
+              <div class="flex font-semibold pb-3 ">Star rating</div>
+              <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded">
+                <div>5 stars</div>
+              </div>
+              <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded pr-2 ">
+                <div>4 stars</div>
+              </div>
+              <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded pr-2">
+                <div>3 stars</div>
+              </div>
+              <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded pr-2">
+                <div>2 stars</div>
+              </div>
+              <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded pr-2">
+                <div>1 stars</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col space-y-5">
+            <div class="font-semibold pb-3">Review score</div>
+            <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded pr-2">
+              <div>Superb:9+</div>
+            </div>
+            <div class="space-x-3 flex items-center"> <input type="checkbox" class="h-5 w-5 rounded pr-2">
+              <div>very good:8+</div>
+            </div>
+            <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded pr-2">
+              <div>Good:7+</div>
+            </div>
+            <div class="space-x-3 flex items-center"><input type="checkbox" class="h-5 w-5 rounded pr-2 ">
+              <div>Pleasand:6+</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="space-y-8">
+        <div class="font-semibold text-xl">Tool – 5 hotels and places to stay</div>
+        <div class="flex border border-blue-600 rounded text-sm items-center">
+          <div class="px-4 py-2 w-52 text-white bg-blue-600 ">Our top picks</div>
+          <div class="border-l border-zinc-800 px-4 py-2 w-52 text-blue-600">Lowest price first</div>
+          <div class="border-l border-zinc-800 px-4 py-2 w-52 text-blue-600">Star rating and price</div>
+          <div class="border-l border-zinc-800 px-4 py-2 w-52 text-blue-600">Top reviewed</div>
+        </div>
+        <div class=" flex border border-red-600 px-4 py-4 rounded-lg bg-red-50 text-sm sticky top-0">
+          <div class="pr-5"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="m12 1l11.951 20.7H.05zM3.513 19.7h16.974L12 5zM13 9.5V15h-2V9.5zm-2 7h2.004v2.004H11z" />
+            </svg></div>See the latest prices and deals by choosing your dates. <a href=""
+            class="text-blue-700 hover:border-b hover:border-b-blue-700">Choose dates</a>
+        </div>
+
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/126527556 (1).webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/The-Chatwal-Luxury-Collection-Hotel-New-York-Chatwal-Suite-Living-Room-Area.jpg" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/450660059.webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/472018205.webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/42042381.webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/180045757.webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/126527556 (1).webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/126527556 (1).webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/126527556 (1).webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+        <div class="border rounded-xl border-zinc-200 p-4 flex space-x-3 text-sm hover:bg-sky-100 ">
+          <div><img src="./assets/css/images/126527556 (1).webp" alt="" class="rounded object-cover h-52 w-96"></div>
+          <div>
+            <div class="text-lg font-semibold text-blue-600 "> <a href="">Luxuriöse FeWohnung Felsenblick</a></div>
+            <div class="flex pb-3">
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7m0 9.5a2.5 2.5 0 0 1 0-5a2.5 2.5 0 0 1 0 5" />
+                </svg></div><span>Schweizermühle (Near Raum)</span>
+            </div>
+            <div class="pb-3">
+              Luxuriöse FeWohnung Felsenblick has mountain views, free WiFi and free private parking, situated in
+              Schweizermühle, 13 km from Königstein Fortress.
+            </div>
+            <div><a href="" class="text-blue-600">Show more </a></div>
+          </div>
+
+          <div>
+            <div class="flex">
+              <div class="pb-7">
+                <div class="font-semibold text-lg">Exaptoianl</div>
+                <div class="ml-7">4 Review</div>
+              </div>
+              <div class="bg-blue-900 h-9 w-9 text-center text-white font-semibold text-lg p-1 rounded ml-3 mt-2">9.8</div>
+            </div>
+            <div class="pb-1 ml-16">price from</div>
+            <div class="pb-1 text-green-700  font-bold text-xl">LKR 44,748</div>
+            <div class="pb-4 ml-16">Per night</div>
+            <div class="bg-blue-600 rounded text-white font-semibold px-1.5 py-2 text-center cursor-pointer">Check availablity</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
